@@ -29,13 +29,13 @@ public class EmailByAdmin {
             {
                 protected PasswordAuthentication getPasswordAuthentication()
                 {
-                    return new PasswordAuthentication("coder.pawar@gmail.com","security key");
+                    return new PasswordAuthentication("meghanadgaonkar04@gmail.com","sxez iwoy bmpr khqz");
                 }
             });
 
             Message msg = new MimeMessage(session);
 
-            msg.setFrom(new InternetAddress("coder.pawar@gmail.com",false));
+            msg.setFrom(new InternetAddress("meghanadgaonkar04@gmail.com",false));
             
             // Convert the list of email addresses to an array of InternetAddress
             InternetAddress[] recipientAddresses = new InternetAddress[emailList.size()];

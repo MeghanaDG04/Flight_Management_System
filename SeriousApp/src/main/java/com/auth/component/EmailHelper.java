@@ -19,7 +19,7 @@ public class EmailHelper {
     public void sendEmail(String email,String userId){
         try{
         	String filename = "boarding_pass_" + userId + ".pdf";
-        	String filePath = "/Users/suyash9698/downloads/" + filename;
+        	String filePath = "/Users/megha/Downloads/" + filename;  
         	System.out.println(filePath);
             Properties props = new Properties();
             props.put("mail.smtp.auth","true");
@@ -31,13 +31,13 @@ public class EmailHelper {
             {
                 protected PasswordAuthentication getPasswordAuthentication()
                 {
-                    return new PasswordAuthentication("coder.pawar@gmail.com","security key");
+                    return new PasswordAuthentication("meghanadgaonkar04@gmail.com","sxez iwoy bmpr khqz");
                 }
             });
 
             Message msg = new MimeMessage(session);
 
-            msg.setFrom(new InternetAddress("coder.pawar@gmail.com",false));
+            msg.setFrom(new InternetAddress("meghanadgaonkar04@gmail.com",false));
             msg.setRecipients(Message.RecipientType.TO,InternetAddress.parse(email));
             msg.setSubject("Boarding Pass");
             msg.setSentDate(new Date());

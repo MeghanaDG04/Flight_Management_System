@@ -31,13 +31,13 @@ public class EmailOTPHelper {
             {
                 protected PasswordAuthentication getPasswordAuthentication()
                 {
-                    return new PasswordAuthentication("coder.pawar@gmail.com","security key");
+                    return new PasswordAuthentication("meghanadgaonkar04@gmail.com","sxez iwoy bmpr khqz");
                 }
             });
 
             Message msg = new MimeMessage(session);
 
-            msg.setFrom(new InternetAddress("coder.pawar@gmail.com",false));
+            msg.setFrom(new InternetAddress("meghanadgaonkar04@gmail.com",false));
             msg.setRecipients(Message.RecipientType.TO,InternetAddress.parse(email));
             msg.setSubject("OTP Authentication");
             msg.setSentDate(new Date());
